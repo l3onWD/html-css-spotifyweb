@@ -170,14 +170,35 @@ ul {
     align-items: center;
 }
 
-.sidebar-logo {
+/* Logo */
+.sidebar-logo-sm {
     /* TODO REMOVE */
     display: block;
     text-align: center;
 }
 
+.sidebar-logo-md {
+    display: none;
+    padding: 0 1rem;
+
+    /* TODO REMOVE */
+    text-align: center;
+}
+
+/* Menu */
 .sidebar-menu {
     padding: 0 1rem;
+}
+
+.sidebar-menu span {
+    display: none;
+}
+
+/* Playlist */
+.sidebar-playlist {
+    display: none;
+    padding: 0 1rem;
+    margin-top: 1rem;
 }
 
 
@@ -220,4 +241,28 @@ ul {
     .app-layout-side {
         flex-basis: var(--layout-side-sm);
     }
+
+    /* Sidebar */
+    .sidebar {
+        align-items: stretch;
+    }
+
+    .sidebar-menu span {
+        display: inline;
+    }
+
+    .sidebar-logo-sm {
+        display: none;
+    }
+
+    .sidebar-logo-md {
+        /* TODO REMOVE */
+        display: block;
+        text-align: left;
+    }
+
+    .sidebar-playlist {
+        display: block;
+    }
+
  }
