@@ -72,7 +72,7 @@ ul {
     word-break: break-all;
 }
 
-.app-layout-main {
+.app-layout-content {
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -175,6 +175,20 @@ ul {
     opacity: 0.5;
 }
 
+
+/******* Content Navbar *******/
+.content-navbar ul {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.content-navbar a {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+}
 
 /*********************************
  # RESPONSIVE
