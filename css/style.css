@@ -67,6 +67,7 @@ ul {
 
 .app-layout-side {
     flex: 0 0 var(--layout-side-xs);
+    overflow: hidden;
 
     /* TODO REMOVE*/
     word-break: break-all;
