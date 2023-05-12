@@ -4,8 +4,8 @@
 
     /* layout */
     --layout-bottom: 100px;
-    --layout-side-xs: 80px;
-    --layout-side-sm: 200px;
+    --layout-side-sm: 80px;
+    --layout-side-md: 200px;
 
     /* commons */
     --container: 1080px;
@@ -66,7 +66,7 @@ ul {
 }
 
 .app-layout-side {
-    flex: 0 0 var(--layout-side-xs);
+    flex: 0 0 var(--layout-side-sm);
     overflow: hidden;
 
     /* TODO REMOVE*/
@@ -239,7 +239,7 @@ ul {
     
     /* App Layout */
     .app-layout-side {
-        flex-basis: var(--layout-side-sm);
+        flex-basis: var(--layout-side-md);
     }
 
     /* Sidebar */
