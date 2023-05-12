@@ -161,8 +161,8 @@ ul {
 }
 
 
-/******* Main Header *******/
-#main-header {
+/******* Content Header *******/
+.content-header {
     height: var(--main-header-height);
     padding: 1.5rem;
     text-align: right;
