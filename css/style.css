@@ -278,7 +278,7 @@ footer > * {
 /*********************************
  # RESPONSIVE
  *********************************/
-/* Media SM */
+/* Media Query SM */
  @media screen and (min-width: 576px) {
     
     /* App Layout */
@@ -311,7 +311,7 @@ footer > * {
 
  }
 
-/* Media MD */
+/* Media Query MD */
  @media screen and (min-width: 768px) {
 
     /******* Cards *******/
@@ -321,7 +321,7 @@ footer > * {
 
  }
 
-/* Media LG */
+/* Media Query LG */
  @media screen and (min-width: 992px) {
 
     /******* Cards *******/
