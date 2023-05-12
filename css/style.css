@@ -9,6 +9,7 @@
 
     /* commons */
     --container: 1080px;
+    --main-header-height: 80px;
 }
 
 
@@ -140,6 +141,10 @@ ul {
     background-color: cyan;
 }
 
+.db-purple {
+    background-color: purple;
+}
+
 
 /* ====================================== */
 /******* Buttons *******/
@@ -155,6 +160,20 @@ ul {
     background-color: transparent;
 }
 
+
+/******* Main Header *******/
+#main-header {
+    height: var(--main-header-height);
+    padding: 1.5rem;
+    text-align: right;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    /* TODO REMOVE*/
+    opacity: 0.5;
+}
 
 
 /*********************************
