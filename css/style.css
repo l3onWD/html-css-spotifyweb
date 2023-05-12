@@ -8,7 +8,6 @@
     --layout-side-md: 200px;
 
     /* commons */
-    --container: 1080px;
     --main-header-height: 80px;
 }
 
@@ -49,17 +48,18 @@ section {
 
 /******* Utils *******/
 /* Misc */
-/*
-.container {
-    max-width: var(--container);
-    margin-left: auto;
-    margin-right: auto;
-}
-*/
 .img-fluid {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 
@@ -261,6 +261,17 @@ section {
 
     /* TODO REMOVE */
     min-height: 180px;
+}
+
+
+/******* Footer *******/
+footer {
+    padding: 1rem 0.5rem;
+    display: flex;
+}
+
+footer > * {
+    flex-basis: calc(100% / 3);
 }
 
 
