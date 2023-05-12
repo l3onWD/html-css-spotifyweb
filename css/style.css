@@ -5,6 +5,7 @@
     /* layout */
     --layout-bottom: 100px;
     --layout-side-sm: 40px;
+    --layout-side-md: 200px;
 
     /* commons */
     --container: 1080px;
@@ -153,3 +154,17 @@ ul {
     color: #000;
     background-color: transparent;
 }
+
+
+
+/*********************************
+ # RESPONSIVE
+ *********************************/
+
+ @media screen and (min-width: 576px) {
+    
+    /* App Layout */
+    .app-layout-side {
+        flex-basis: var(--layout-side-md);
+    }
+ }
