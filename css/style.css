@@ -27,7 +27,7 @@ body {
 }
 
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -251,6 +251,8 @@ section {
     flex-wrap: wrap;
     margin-left: -0.25rem;
     margin-right: -0.25rem;
+
+    margin-top: 1.5rem;
 }
 
 .card {
@@ -310,5 +312,10 @@ section {
 
 /* Media LG */
  @media screen and (min-width: 992px) {
+
+    /******* Cards *******/
+    .card {
+        flex-basis: calc(100% / 6 - 0.5rem);
+    }
 
  }
