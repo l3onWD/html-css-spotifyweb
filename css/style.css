@@ -68,9 +68,6 @@ ul {
 .app-layout-side {
     flex: 0 0 var(--layout-side-sm);
     overflow: hidden;
-
-    /* TODO REMOVE*/
-    word-break: break-all;
 }
 
 .app-layout-content {
@@ -220,6 +217,7 @@ ul {
 /******* Content Navbar *******/
 .content-navbar ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     height: 40px;
 }
@@ -230,6 +228,7 @@ ul {
     padding: 0 1rem;
     height: 100%;
 }
+
 
 /*********************************
  # RESPONSIVE
