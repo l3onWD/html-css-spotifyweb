@@ -4,7 +4,7 @@
 
     /* layout */
     --layout-bottom: 100px;
-    --layout-side-xs: 40px;
+    --layout-side-xs: 80px;
     --layout-side-sm: 200px;
 
     /* commons */
@@ -159,6 +159,25 @@ ul {
     padding: 6px 12px;
     color: #000;
     background-color: transparent;
+}
+
+
+/******* Sidebar *******/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-logo {
+    /* TODO REMOVE */
+    display: block;
+    text-align: center;
+}
+
+.sidebar-menu {
+    padding: 0 1rem;
 }
 
 
