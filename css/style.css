@@ -4,6 +4,7 @@
 
     /* layout */
     --layout-bottom: 100px;
+    --layout-side-sm: 40px;
 
     /* commons */
     --container: 1080px;
@@ -55,12 +56,25 @@ ul {
 /* App Layout */
 .app-layout-top {
     height: calc(100vh - var(--layout-bottom));
-    overflow-y: auto;
+    display: flex;
 }
 
 .app-layout-bottom {
     height: var(--layout-bottom);
 }
+
+.app-layout-side {
+    flex: 0 0 var(--layout-side-sm);
+
+    /* TODO REMOVE*/
+    word-break: break-all;
+}
+
+.app-layout-main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
 
 /* Flex Grid */
 .row {
