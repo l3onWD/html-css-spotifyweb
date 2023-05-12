@@ -1,6 +1,11 @@
 /******* Variables *******/
 :root {
+    /* palettes */
 
+    /* layout */
+    --layout-bottom: 100px;
+
+    /* commons */
     --container: 1080px;
 }
 
@@ -47,6 +52,16 @@ ul {
 
 
 /******* Layout *******/
+/* App Layout */
+.app-layout-top {
+    height: calc(100vh - var(--layout-bottom));
+    overflow-y: auto;
+}
+
+.app-layout-bottom {
+    height: var(--layout-bottom);
+}
+
 /* Flex Grid */
 .row {
     display: flex;
@@ -82,10 +97,32 @@ ul {
 
 
 /******* Debug *******/
-.debug {
+.db-border {
+    border: 2px dashed #000;
+}
+
+.db-height {
     min-height: 500px;
-    background-color: aquamarine;
-    border: 2px dashed #fff;
+}
+
+.db-red {
+    background-color: red;
+}
+
+.db-yellow {
+    background-color: yellow;
+}
+
+.db-blue {
+    background-color: blue;
+}
+
+.db-green {
+    background-color: green;
+}
+
+.db-cyan {
+    background-color: cyan;
 }
 
 
