@@ -183,6 +183,13 @@ section {
     align-items: center;
 }
 
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 200px;
+}
+
 /* Logo */
 .sidebar-logo-sm {
     /* TODO REMOVE */
@@ -210,8 +217,15 @@ section {
 /* Playlist */
 .sidebar-playlist {
     display: none;
+    flex-direction: column;
     padding: 0 1rem;
     margin-top: 1rem;
+
+    min-height: 100px;
+}
+
+.sidebar-playlist ul {
+    overflow-y: auto;
 }
 
 
@@ -304,7 +318,7 @@ footer > * {
     }
 
     .sidebar-playlist {
-        display: block;
+        display: flex;
     }
 
  }
