@@ -1,6 +1,34 @@
 /******* Variables *******/
 :root {
-    /* palettes */
+    /* COLORS STUDY 
+
+    * MAIN *
+    #141922; | sfondo
+    #7c7e83; | testo
+    #ffffff; | headers e bottoni
+
+    * SIDEBAR *
+    #000000; | sfondo
+    #717171; | testi
+    #a3a3a3; | icone
+    #d2d2d2; | icone active
+    #ffffff; | headers e testi active
+
+    * PLAYER *
+    #282828; | sfondo
+    #5a5a5a; | testo e sfondo barra
+    #c1c1c1; | barra
+    #ffffff; | headers e bottoni
+    
+    */
+
+    /* palette */
+    --col-gray-900: #141922;
+    --col-gray-700: #282828;
+    --col-gray-500: #5a5a5a;
+    --col-gray-400: #7c7e83;
+    --col-gray-100: #c1c1c1;
+    --col-green: #adff2f;
 
     /* layout */
     --layout-bottom: 100px;
@@ -23,10 +51,14 @@
 /******* Generics *******/
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--col-gray-900);
+    color: var(--col-gray-400);
 }
 
 h2 {
     margin-bottom: 0.5rem;
+
+    color: #fff;
 }
 
 p {
@@ -35,6 +67,9 @@ p {
 
 a {
     text-decoration: none;
+
+    /* TODO Remove */
+    color: inherit;
 }
 
 ul {
@@ -181,6 +216,8 @@ section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #000;
 }
 
 .sidebar-top {
@@ -239,8 +276,7 @@ section {
     top: 0;
     left: 0;
 
-    /* TODO REMOVE*/
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -280,6 +316,8 @@ section {
 footer {
     padding: 1rem 0.5rem;
     display: flex;
+
+    background-color: var(--col-gray-700);
 }
 
 footer > * {
