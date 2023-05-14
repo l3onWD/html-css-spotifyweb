@@ -19,6 +19,10 @@
     #5a5a5a; | testo e sfondo barra
     #c1c1c1; | barra
     #ffffff; | headers e bottoni
+
+    * CUSTOM SCROLLBAR *
+    #fafafa | background
+    #c8c8c8 | thumb
     
     */
 
@@ -32,7 +36,7 @@
 
     /* layout */
     --layout-bottom: 100px;
-    --layout-side-sm: 80px;
+    --layout-side-sm: 50px;
     --layout-side-md: 200px;
 
     /* commons */
@@ -119,42 +123,25 @@ section {
     overflow-y: auto;
 }
 
-
-/* Flex Grid */
-/*
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
+/* * custom scrollbar 
+.app-layout-content::-webkit-scrollbar,
+.sidebar-playlist ul::-webkit-scrollbar {
+    width: 10px;
 }
 
-.row > * {
-    padding: 0 1rem;
+.app-layout-content::-webkit-scrollbar-track,
+.sidebar-playlist ul::-webkit-scrollbar-track {
+    background-color: #fafafa;
 }
 
-
-.col {
-    flex-grow: 1;
-}
-
-.col-33 {
-    flex-basis: calc(100% / 3);
-}
-
-.col-40 {
-    flex-basis: 40%;
-}
-
-.col-60 {
-    flex-basis: 60%;
-}
-
-.col-66 {
-    flex-basis: calc(100% / 3 * 2);
+.app-layout-content::-webkit-scrollbar-thumb,
+.sidebar-playlist ul::-webkit-scrollbar-thumb {
+    background-color: #c8c8c8;
+    border-radius: 0.4rem;
+    border: 2px solid #fafafa;
 }
 */
+
 
 /******* Debug *******/
 .db-border {
@@ -215,7 +202,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 
     background-color: #000;
 }
@@ -228,28 +214,58 @@ section {
 }
 
 /* Logo */
-.sidebar-logo-sm {
-    /* TODO REMOVE */
-    display: block;
+.sidebar-logo {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 
-.sidebar-logo-md {
-    display: none;
-    padding: 0 1rem;
+.sidebar-logo .logo-sm {
+    width: 32px;
+}
 
-    /* TODO REMOVE */
-    text-align: center;
+.sidebar-logo .logo-md {
+    display: none;
 }
 
 /* Menu */
 .sidebar-menu {
-    padding: 0 1rem;
+    padding: 0.25rem 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 0.25rem 0;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.sidebar-menu a.active {
+    color: #fff;
+}
+
+.sidebar-menu-icon {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.sidebar-menu-icon.icon-small {
+    width: 18px;
+    height: 18px;
+}
+
+.sidebar-menu-icon.icon-secondary {
+    fill: #fff;
+    background-color: var(--col-gray-400);
 }
 
 .sidebar-menu span {
     display: none;
 }
+
 
 /* Playlist */
 .sidebar-playlist {
@@ -343,16 +359,6 @@ footer > * {
 
     .sidebar-menu span {
         display: inline;
-    }
-
-    .sidebar-logo-sm {
-        display: none;
-    }
-
-    .sidebar-logo-md {
-        /* TODO REMOVE */
-        display: block;
-        text-align: left;
     }
 
     .sidebar-playlist {
