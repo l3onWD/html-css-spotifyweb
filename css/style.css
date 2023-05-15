@@ -420,11 +420,30 @@ section {
 }
 
 .media-img {
-    max-width: 100%;
-    height: auto;
     display: block;
-
     margin-bottom: 1.5rem;
+
+    color: #fff;
+    font-size: 48px;
+    
+    position: relative;
+}
+
+.media-img:hover img {
+    filter: brightness(0.5);
+}
+
+.media-img:hover::after {
+    content: '\f144';
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-regular);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .media-subtitle {
