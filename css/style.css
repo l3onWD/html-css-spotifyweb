@@ -414,12 +414,19 @@ section {
 .media {
     flex-basis: calc(50% - 0.5rem);
     margin: 0.25rem;
+    text-align: center;
 }
 
 .media-img {
     max-width: 100%;
     height: auto;
     display: block;
+
+    margin-bottom: 1.5rem;
+}
+
+.media-subtitle {
+    font-weight: bold;
 }
 
 
