@@ -241,6 +241,7 @@ section {
 }
 
 .sidebar-logo .logo-md {
+    width: 140px;
     display: none;
 }
 
@@ -347,8 +348,17 @@ footer > * {
     }
 
     /* Sidebar */
-    .sidebar {
-        align-items: stretch;
+    .sidebar-logo {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .sidebar-logo .logo-sm {
+        display: none;
+    }
+    
+    .sidebar-logo .logo-md {
+        display: inline-block;
     }
 
     .sidebar-menu span {
