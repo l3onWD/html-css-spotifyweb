@@ -347,7 +347,8 @@ footer > * {
         flex-basis: var(--layout-side-md);
     }
 
-    /* Sidebar */
+
+    /* Sidebar logo */
     .sidebar-logo {
         padding: 1rem;
         text-align: left;
@@ -361,10 +362,34 @@ footer > * {
         display: inline-block;
     }
 
+
+    /* Sidebar menu */
+    .sidebar-menu a {
+        padding: 0.25rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        position: relative;
+    }
+
+    .sidebar-menu a.active::before {
+        content: '';
+        background-color: var(--col-green);
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+    }
+
     .sidebar-menu span {
         display: inline;
     }
 
+
+    /* Sidebar playlist */
     .sidebar-playlist {
         display: flex;
     }
