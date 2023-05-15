@@ -104,21 +104,21 @@ section {
 
 /******* Layout *******/
 /* App Layout */
-.app-layout-top {
+.layout-top {
     height: calc(100vh - var(--layout-bottom));
     display: flex;
 }
 
-.app-layout-bottom {
+.layout-bottom {
     height: var(--layout-bottom);
 }
 
-.app-layout-side {
+.layout-side {
     flex: 0 0 var(--layout-side-sm);
     overflow: hidden;
 }
 
-.app-layout-content {
+.layout-main {
     flex-grow: 1;
     overflow-y: auto;
 }
