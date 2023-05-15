@@ -59,10 +59,17 @@ body {
     color: var(--col-gray-400);
 }
 
+h2,
+h4 {
+    color: #fff;
+}
+
 h2 {
     margin-bottom: 0.5rem;
+}
 
-    color: #fff;
+h4 {
+    margin-bottom: 0.25rem;
 }
 
 p {
@@ -116,6 +123,10 @@ section {
 
 .d-inline-block {
     display: inline-block;
+}
+
+.d-flex {
+    display: flex;
 }
 
 
@@ -283,10 +294,9 @@ section {
 
 /* Playlist */
 .sidebar-playlist {
-    display: none;
     flex-direction: column;
     padding: 0 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     min-height: 100px;
 }
@@ -295,12 +305,15 @@ section {
     overflow-y: auto;
 }
 
-
-/* Actions */
-.sidebar-actions li:first-child {
-    border-bottom: 1px solid var(--col-gray-400);
+.sidebar-playlist a {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+
+/* Actions */
 .sidebar-actions li:nth-child(2) {
     font-size: 16px;
 }
@@ -389,6 +402,11 @@ footer > * {
     .d-sm-inline-block {
         display: inline-block;
     }
+
+    .d-sm-flex {
+        display: flex;
+    }
+
     
     /* App Layout */
     .layout-side {
@@ -423,15 +441,13 @@ footer > * {
     }
 
 
-    /* Sidebar playlist */
-    .sidebar-playlist {
-        display: flex;
-    }
-
-
     /* Sidebar actions */
     .sidebar-actions {
         padding: 0 1rem;
+    }
+
+    .sidebar-actions li:first-child {
+        border-bottom: 1px solid var(--col-gray-400);
     }
 
     .sidebar-actions a {
