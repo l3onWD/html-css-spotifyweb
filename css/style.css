@@ -53,6 +53,10 @@
 
 
 /******* Generics *******/
+html {
+    font-size: 14px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--col-gray-900);
@@ -106,6 +110,10 @@ section {
     text-align: right;
 }
 
+.text-big {
+    font-size: 16px;
+}
+
 /* Colors */
 .text-white {
     color: #fff;
@@ -150,6 +158,25 @@ section {
     flex-grow: 1;
     overflow-y: auto;
 }
+
+
+/* Margins */
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.8rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
 
 /* * custom scrollbar 
 .app-layout-content::-webkit-scrollbar,
@@ -251,7 +278,6 @@ section {
     flex-direction: column;
     justify-content: space-between;
 
-    font-size: 14px;
     font-weight: bold;
 
     background-color: #000;
@@ -296,7 +322,6 @@ section {
 .sidebar-playlist {
     flex-direction: column;
     padding: 0 1rem;
-    margin-top: 1.5rem;
 
     min-height: 100px;
 }
@@ -314,10 +339,6 @@ section {
 
 
 /* Actions */
-.sidebar-actions li:nth-child(2) {
-    font-size: 16px;
-}
-
 .sidebar-actions a {
     display: block;
     padding: 0.5rem 0;
@@ -390,7 +411,7 @@ footer > * {
 /* Media Query SM */
  @media screen and (min-width: 576px) {
 
-    /* Utils */
+    /******* Utils *******/
     .d-sm-none {
         display: none;
     }
@@ -408,12 +429,13 @@ footer > * {
     }
 
     
-    /* App Layout */
+    /******* App Layout *******/
     .layout-side {
         flex-basis: var(--layout-side-md);
     }
 
 
+    /******* Sidebar *******/
     /* Sidebar logo */
     .sidebar-logo {
         padding: 1rem;
