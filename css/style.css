@@ -342,13 +342,13 @@ footer > * {
 
 
 /*********************************
- # RESPONSIVE
+ ** RESPONSIVE
  *********************************/
 /* Media Query SM */
  @media screen and (min-width: 576px) {
     
     /* App Layout */
-    .app-layout-side {
+    .layout-side {
         flex-basis: var(--layout-side-md);
     }
 
