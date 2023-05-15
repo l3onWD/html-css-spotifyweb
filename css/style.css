@@ -40,7 +40,7 @@
     --layout-side-md: 200px;
 
     /* commons */
-    --main-header-height: 80px;
+    --main-header-height: 90px;
 }
 
 
@@ -223,16 +223,7 @@ section {
 
 /******* Debug *******/
 .db-border {
-    border: 2px dashed #000;
-}
-
-.db-height {
-    min-height: 500px;
-}
-
-.db-card {
-    height: 180px;
-    width: 180px;
+    border: 2px dashed #fff;
 }
 
 .db-red {
@@ -262,17 +253,24 @@ section {
 
 /* ====================================== */
 /******* Buttons *******/
-/*.btn {
+.btn {
     display: inline-block;
     text-decoration: none;
     text-align: center;
     border: 1px solid transparent;
     cursor: pointer;
     
-    padding: 6px 12px;
+    padding: 10px 40px;
     color: #000;
     background-color: transparent;
-}*/
+    border-radius: 22px;
+    font-weight: bold;
+}
+
+.btn.btn-outline-light {
+    color: #fff;
+    border-color: currentColor;
+}
 
 
 /******* Icons *******/
@@ -380,11 +378,10 @@ section {
 }
 
 
-/******* Content Header *******/
-.content-header {
+/******* Main Header *******/
+.main-header {
     height: var(--main-header-height);
     padding: 1.5rem;
-    text-align: right;
 
     position: sticky;
     top: 0;
@@ -394,14 +391,14 @@ section {
 }
 
 
-/******* Content Navbar *******/
-.content-navbar ul {
+/******* Main Navbar *******/
+.main-navbar ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.content-navbar a {
+.main-navbar a {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
