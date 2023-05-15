@@ -71,9 +71,6 @@ p {
 
 a {
     text-decoration: none;
-
-    /* TODO Remove */
-    color: inherit;
 }
 
 ul {
@@ -236,7 +233,6 @@ section {
 /* Logo */
 .sidebar-logo {
     padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -252,8 +248,8 @@ section {
 .sidebar-menu a {
     display: block;
     padding: 0.25rem 0;
+    color: var(--col-gray-400);
     text-align: center;
-    border: 2px solid transparent;
 }
 
 .sidebar-menu a.active {
