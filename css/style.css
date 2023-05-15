@@ -37,7 +37,7 @@
     /* layout */
     --layout-bottom: 100px;
     --layout-side-sm: 50px;
-    --layout-side-md: 200px;
+    --layout-side-md: 230px;
 
     --gallery-gutter: 0.5rem;
 
@@ -93,7 +93,7 @@ ul {
 }
 
 section {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 }
 
 
@@ -193,6 +193,10 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
 .mr-0 {
     margin-right: 0;
 }
@@ -207,6 +211,10 @@ section {
 
 .mr-3 {
     margin-right: 1.5rem;
+}
+
+.mr-4 {
+    margin-right: 2rem;
 }
 
 
@@ -390,7 +398,7 @@ section {
 
 .main-navbar a {
     display: block;
-    padding: 1rem;
+    padding: 1.2rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
 
