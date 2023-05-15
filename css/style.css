@@ -425,8 +425,13 @@ section {
 
     color: #fff;
     font-size: 48px;
-    
+
     position: relative;
+}
+
+.media-img.media-img-rounded {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .media-img:hover img {
