@@ -369,8 +369,8 @@ section {
     overflow-y: auto;
 }
 
-.sidebar-playlist a {
-    padding: 0.5rem 0;
+.sidebar-playlist ul a {
+    padding: 1rem 0;
 }
 
 
