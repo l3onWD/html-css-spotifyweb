@@ -355,7 +355,7 @@ section {
 /* Playlist */
 .sidebar-playlist {
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 
     min-height: 100px;
 }
@@ -365,7 +365,7 @@ section {
 }
 
 .sidebar-playlist ul a {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
 
 
@@ -532,13 +532,13 @@ footer > * {
     /******* Sidebar *******/
     /* Sidebar logo */
     .sidebar-logo {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
 
     /* Sidebar menu */
     .sidebar-menu a {
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 1.5rem;
     }
 
     .sidebar-menu a.active::before {
@@ -548,7 +548,7 @@ footer > * {
 
     /* Sidebar actions */
     .sidebar-actions {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
 
     .sidebar-actions li:first-child {
