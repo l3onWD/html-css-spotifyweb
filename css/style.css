@@ -150,6 +150,10 @@ section {
     color: #fff;
 }
 
+.text-black {
+    color: #000;
+}
+
 .bg-gray-400 {
     background-color: var(--col-gray-400);
 }
@@ -330,19 +334,10 @@ section {
 .icon.icon-big {
     width: 38px;
     height: 38px;
-    font-size: 22px;
 }
 
 .icon.icon-rounded {
     border-radius: 50%;
-}
-
-.icon.icon-light {
-    color: #fff;
-}
-
-.icon.icon-black {
-    color: #000;
 }
 
 
