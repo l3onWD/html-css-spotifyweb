@@ -2,32 +2,6 @@
  * Variables
  * *****************************************/
 :root {
-    /* COLORS STUDY 
-
-    * MAIN *
-    #141922; | sfondo
-    #7c7e83; | testo
-    #ffffff; | headers e bottoni
-
-    * SIDEBAR *
-    #000000; | sfondo
-    #717171; | testi
-    #a3a3a3; | icone
-    #d2d2d2; | icone active
-    #ffffff; | headers e testi active
-
-    * PLAYER *
-    #282828; | sfondo
-    #5a5a5a; | testo e sfondo barra
-    #c1c1c1; | barra
-    #ffffff; | headers e bottoni
-
-    * CUSTOM SCROLLBAR *
-    #fafafa | background
-    #c8c8c8 | thumb
-    
-    */
-
     /* palette */
     --col-gray-900: #141922;
     --col-gray-700: #282828;
@@ -89,7 +63,6 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    margin-bottom: 0.15rem;
 }
 
 p {
@@ -317,11 +290,19 @@ section {
     color: #fff;
 }
 
-.btn.btn-large {
-    padding: 0.5rem 2.5rem;
+.btn.btn-2x {
+    padding: 0.5rem 2rem;
 }
 
-.btn.btn-large:hover {
+.btn.btn-2x:hover {
+    transform: scale(1.1);
+}
+
+.btn.btn-3x {
+    padding: 1rem 3.5rem;
+}
+
+.btn.btn-3x:hover {
     transform: scale(1.05);
 }
 
@@ -594,7 +575,7 @@ footer > * {
 
 /* Player Controls */
 .player-controls {
-    flex: 1 0 190px;
+    flex: 1 0 160px;
 }
 
 .player-controls-top {
