@@ -166,6 +166,10 @@ section {
     display: inline-block;
 }
 
+.d-block {
+    display: block;
+}
+
 .d-flex {
     display: flex;
 }
@@ -366,11 +370,12 @@ section {
 }
 
 .sidebar-top {
-    flex: 1 0 200px;
+    flex: 0 0 200px;
 }
 
 .sidebar-middle {
     min-height: 50px;
+    flex-grow: 1;
 }
 
 .sidebar-bottom {
@@ -672,6 +677,10 @@ footer > * {
     
     .d-sm-inline-block {
         display: inline-block;
+    }
+
+    .d-sm-block {
+        display: block;
     }
 
     .d-sm-flex {
