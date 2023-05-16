@@ -296,6 +296,10 @@ section {
     font-weight: bold;
 }
 
+.btn > * {
+    vertical-align: middle;
+}
+
 .btn.btn-light {
     color: #fff;
 }
@@ -356,19 +360,6 @@ section {
     background-color: #000;
 }
 
-.sidebar a {
-    display: block;
-    line-height: 1;
-}
-
-.sidebar a > * {
-    vertical-align: middle;
-}
-
-.sidebar a:hover {
-    color: #fff;
-}
-
 .sidebar-top {
     flex: 0 0 200px;
 }
@@ -384,6 +375,7 @@ section {
 
 /* Logo */
 .sidebar-logo {
+    display: block;
     padding: 0.5rem 0;
 }
 
@@ -397,6 +389,8 @@ section {
 
 /* Menu */
 .sidebar-menu a {
+    display: block;
+    line-height: 1;
     padding: 0.25rem 0;
 
     position: relative;
@@ -416,6 +410,14 @@ section {
     width: 4px;
 }
 
+.sidebar-menu a > * {
+    vertical-align: middle;
+}
+
+.sidebar-menu a:hover {
+    color: #fff;
+}
+
 
 /* Playlist */
 .sidebar-playlist {
@@ -430,7 +432,13 @@ section {
 }
 
 .sidebar-playlist ul a {
+    display: block;
+    line-height: 1;
     padding: 0.8rem 0;
+}
+
+.sidebar-playlist ul a:hover {
+    color: #fff;
 }
 
 
