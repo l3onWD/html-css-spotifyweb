@@ -318,7 +318,7 @@ section {
 }
 
 .btn.btn-large {
-    padding: 8px 30px;
+    padding: 0.5rem 2.5rem;
 }
 
 .btn.btn-large:hover {
@@ -391,7 +391,7 @@ section {
 .sidebar-menu a {
     display: block;
     line-height: 1;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
 
     position: relative;
 }
@@ -434,7 +434,7 @@ section {
 .sidebar-playlist ul a {
     display: block;
     line-height: 1;
-    padding: 0.8rem 0;
+    padding: 1rem 0;
 }
 
 .sidebar-playlist ul a:hover {
@@ -475,7 +475,7 @@ section {
 
 .main-navbar a {
     display: block;
-    padding: 1.2rem 1rem;
+    padding: 1.5rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
 
@@ -572,7 +572,6 @@ footer > * {
 .player-info-left {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 .player-info-left img {
@@ -593,12 +592,18 @@ footer > * {
     padding: 0 1.5rem;
 }
 
-/* Player Main */
-.player-main-top > * {
-    vertical-align: middle;
+/* Player Controls */
+.player-controls {
+    flex: 1 0 190px;
 }
 
-.player-main-bottom {
+.player-controls-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controls-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,13 +612,12 @@ footer > * {
     color: #fff;
 }
 
-/* Player Right */
-.player-right {
+/* Player Controls Right */
+.player-controls-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem;
 }
 
 
@@ -729,7 +733,7 @@ footer > * {
 
     /* Sidebar menu */
     .sidebar-menu a {
-        padding: 0.25rem 1.5rem;
+        padding: 0.5rem 1.5rem;
     }
 
     .sidebar-menu a.active::before {
