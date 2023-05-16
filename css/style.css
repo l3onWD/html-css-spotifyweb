@@ -136,10 +136,6 @@ section {
 
 
 /* Font */
-.font-big {
-    font-size: 14px;
-}
-
 .font-bold {
     font-weight: bold;
 }
@@ -314,11 +310,11 @@ section {
 }
 
 .btn.btn-large {
-    padding: 10px 40px;
+    padding: 8px 30px;
 }
 
 .btn.btn-large:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
