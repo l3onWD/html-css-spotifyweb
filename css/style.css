@@ -150,14 +150,6 @@ section {
     color: #fff;
 }
 
-.text-black {
-    color: #000;
-}
-
-.bg-gray-400 {
-    background-color: var(--col-gray-400);
-}
-
 
 /* Dimension */
 .w-100 {
@@ -307,10 +299,6 @@ section {
     color: #fff;
 }
 
-.btn.btn-light:hover {
-    transform: scale(1.1);
-}
-
 .btn.btn-outline-light {
     color: #fff;
     border-color: currentColor;
@@ -341,30 +329,19 @@ section {
  * Icons
  * *****************************************/
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     fill: currentColor;
-    font-size: 16px;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.icon.icon-small {
-    width: 18px;
-    height: 18px;
-    font-size: 14px;
-}
-
-.icon.icon-big {
-    width: 38px;
-    height: 38px;
-    font-size: 34px;
+.icon.icon-2x {
+    width: 2em;
+    height: 2em;
 }
 
 .icon.icon-rounded {
     border-radius: 50%;
+    background-color: var(--col-gray-400);
 }
 
 
@@ -615,6 +592,8 @@ footer > * {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    color: #fff;
 }
 
 /* Player Right */
