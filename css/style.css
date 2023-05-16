@@ -242,6 +242,26 @@ section {
     margin-right: 2rem;
 }
 
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-1 {
+    margin-left: 0.5rem;
+}
+
+.ml-2 {
+    margin-left: 1rem;
+}
+
+.ml-3 {
+    margin-left: 1.5rem;
+}
+
+.ml-4 {
+    margin-left: 2rem;
+}
+
 
 /* *****************************************
 ! Debug
@@ -317,10 +337,10 @@ section {
  * Icons
  * *****************************************/
 .icon {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     fill: currentColor;
-    font-size: 20px;
+    font-size: 16px;
 
     display: inline-flex;
     justify-content: center;
@@ -330,7 +350,7 @@ section {
 .icon.icon-small {
     width: 18px;
     height: 18px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .icon.icon-big {
@@ -576,6 +596,17 @@ footer > * {
 /* Player Main */
 .player-main-top > * {
     vertical-align: middle;
+}
+
+.player-main-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+    flex-grow: 1;
+    background-color: var(--col-gray-400);
 }
 
 
