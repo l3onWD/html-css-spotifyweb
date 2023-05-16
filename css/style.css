@@ -290,6 +290,7 @@ section {
     cursor: pointer;
     
     color: #000;
+    font-size: 14px;
     background-color: transparent;
     border-radius: 22px;
     font-weight: bold;
@@ -318,10 +319,6 @@ section {
 
 .btn.btn-large:hover {
     transform: scale(1.1);
-}
-
-.btn-big {
-    font-size: 14px;
 }
 
 
