@@ -532,7 +532,7 @@ section {
 
 
 /* *****************************************
- * Footer
+ * Player
  * *****************************************/
 footer {
     padding: 1rem;
@@ -564,6 +564,7 @@ footer > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     padding: 0 1.5rem;
 }
@@ -658,6 +659,14 @@ footer > * {
      * *****************************************/
     .media {
         flex-basis: calc(25% - (var(--gallery-gutter) * 2));
+    }
+
+
+    /* *****************************************
+     * Player
+     * *****************************************/
+    .player-info-right {
+        flex-direction: row;
     }
 
  }
