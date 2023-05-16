@@ -158,6 +158,11 @@ section {
     background-color: var(--col-gray-400);
 }
 
+/* Dimension */
+.w-100 {
+    width: 100%;
+}
+
 
 /* Display */
 .d-none {
@@ -607,10 +612,11 @@ footer > * {
 
 /* Progress Bar */
 .progress-bar {
-    flex-grow: 1;
     height: 6px;
     border-radius: 3px;
     background-color: var(--col-gray-400);
+    
+    min-width: 80px;
 }
 
 .progress-bar .value {
@@ -619,6 +625,15 @@ footer > * {
     background-color: var(--col-gray-100);
 
     width: 20%;
+}
+
+/* Player Right */
+.player-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 
