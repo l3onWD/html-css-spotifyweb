@@ -234,9 +234,21 @@ section {
     margin-right: 1rem;
 }
 
+.mr-3 {
+    margin-right: 1.5rem;
+}
+
 /* Margin Left */
 .ml-1 {
     margin-left: 0.5rem;
+}
+
+.ml-2 {
+    margin-left: 1rem;
+}
+
+.ml-3 {
+    margin-left: 1.5rem;
 }
 
 
@@ -282,7 +294,6 @@ section {
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-align: center;
     border: 1px solid transparent;
     cursor: pointer;
     
@@ -313,12 +324,16 @@ section {
     color: #fff;
 }
 
-.btn.btn-big {
+.btn.btn-large {
     padding: 10px 40px;
 }
 
-.btn.btn-big:hover {
+.btn.btn-large:hover {
     transform: scale(1.1);
+}
+
+.btn-big {
+    font-size: 14px;
 }
 
 
