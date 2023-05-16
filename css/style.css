@@ -150,6 +150,10 @@ section {
     color: #fff;
 }
 
+.bg-gray-400 {
+    background-color: var(--col-gray-400);
+}
+
 
 /* Display */
 .d-none {
@@ -312,8 +316,10 @@ section {
     width: 28px;
     height: 28px;
     fill: currentColor;
-    border-radius: 50%;
-    background-color: transparent;
+
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .icon.icon-small {
@@ -321,10 +327,23 @@ section {
     height: 18px;
 }
 
-.icon.icon-light {
-    fill: #fff;
-    background-color: var(--col-gray-400);
+.icon.icon-big {
+    width: 38px;
+    height: 38px;
 }
+
+.icon.icon-rounded {
+    border-radius: 50%;
+}
+
+.icon.icon-light {
+    color: #fff;
+}
+
+.icon.icon-black {
+    color: #000;
+}
+
 
 
 /* *****************************************
