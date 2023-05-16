@@ -273,6 +273,7 @@ section {
     vertical-align: middle;
 }
 
+/* btn colors */
 .btn.btn-light {
     color: #fff;
 }
@@ -290,6 +291,7 @@ section {
     color: #fff;
 }
 
+/* btn size */
 .btn.btn-2x {
     padding: 0.5rem 2rem;
 }
