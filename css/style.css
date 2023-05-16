@@ -535,7 +535,7 @@ section {
  * Footer
  * *****************************************/
 footer {
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     font-size: 12px;
 
@@ -548,14 +548,12 @@ footer > * {
 
 .player-info {
     display: flex;
-    padding: 0 1rem;
-    gap: 0.5rem;
 }
 
 .player-info-left {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .player-info-left img {
@@ -566,7 +564,8 @@ footer > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.5rem;
+
+    padding: 0 1.5rem;
 }
 
 
