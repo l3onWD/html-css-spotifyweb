@@ -62,7 +62,7 @@
  * Generics
  * *****************************************/
 html {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 body {
@@ -137,7 +137,7 @@ section {
 
 /* Font */
 .font-big {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .font-bold {
@@ -545,9 +545,7 @@ section {
 .media-img {
     display: block;
     margin-bottom: 1.5rem;
-
     color: #fff;
-    font-size: 48px;
 
     position: relative;
 }
@@ -567,6 +565,7 @@ section {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font: var(--fa-font-regular);
+    font-size: 48px;
 
     position: absolute;
     top: 50%;
@@ -585,7 +584,6 @@ section {
 footer {
     padding: 1rem;
     display: flex;
-    font-size: 12px;
 
     background-color: var(--col-gray-700);
 }
@@ -635,8 +633,20 @@ footer > * {
     gap: 1rem;
 }
 
-/* Progress Bar */
-.progress-bar {
+/* Player Right */
+.player-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* *****************************************
+ * Progress Bar
+ * *****************************************/
+ .progress-bar {
     height: 6px;
     border-radius: 3px;
     background-color: var(--col-gray-400);
@@ -677,15 +687,6 @@ footer > * {
 
 .progress-bar:hover .marker {
     display: inline-block;
-}
-
-/* Player Right */
-.player-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 
