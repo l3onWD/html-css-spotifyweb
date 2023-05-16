@@ -324,6 +324,10 @@ section {
     color: #fff;
 }
 
+.btn.btn-light:hover {
+    transform: scale(1.1);
+}
+
 .btn.btn-outline-light {
     color: #fff;
     border-color: currentColor;
@@ -333,8 +337,16 @@ section {
     color: var(--col-gray-400);
 }
 
+.btn.btn-secondary:hover {
+    color: #fff;
+}
+
 .btn.btn-big {
     padding: 10px 40px;
+}
+
+.btn.btn-big:hover {
+    transform: scale(1.1);
 }
 
 
@@ -397,6 +409,10 @@ section {
 
 .sidebar a > * {
     vertical-align: middle;
+}
+
+.sidebar a:hover {
+    color: #fff;
 }
 
 /* Logo */
@@ -503,6 +519,10 @@ section {
     transform: translateX(-50%);
 }
 
+.main-navbar a:hover {
+    color: #fff;
+}
+
 
 /* *****************************************
  * Gallery
@@ -589,6 +609,11 @@ footer > * {
     width: 35px;
 }
 
+.player-info-left a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .player-info-right {
     display: flex;
     flex-direction: column;
@@ -615,16 +640,43 @@ footer > * {
     height: 6px;
     border-radius: 3px;
     background-color: var(--col-gray-400);
+    cursor: pointer;
     
     min-width: 80px;
 }
 
+/* Progress Bar Value */
 .progress-bar .value {
     height: 100%;
     border-radius: 3px;
     background-color: var(--col-gray-100);
 
+    position: relative;
+
     width: 20%;
+}
+
+.progress-bar:hover .value {
+    background-color: var(--col-green);
+}
+
+/* Progress Bar Marker */
+.progress-bar .marker {
+    display: none;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px black;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.progress-bar:hover .marker {
+    display: inline-block;
 }
 
 /* Player Right */
